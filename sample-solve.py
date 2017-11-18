@@ -18,7 +18,7 @@ state = proj.factory.entry_state(args=[ELF_FILE])
 simgr = proj.factory.simgr(state)
 ### Simulation Managerでシンボリック実行を開始する。
 ### findはお目当ての実行条件を教える。
-### この条件を満たすステート至ると、avtive stash（探索中のステート）はfound stash（探索に成功したステート）に移行する
+### この条件を満たすステート至ると、active stash（探索中のステート）はfound stash（探索に成功したステート）に移行する
 ### findの引数はラムダ式でもアドレスのlist, tupleでもよい
 simgr.explore(find=lambda p: "correct" in p.state.posix.dumps(1))
 
