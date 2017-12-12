@@ -15,7 +15,12 @@ samples
     * reads user input from __stdin__
 * `./segv`
     * reads user input from __argv__
+    * find argv[1] SEGVs `./segv` 
+    * find loop iteration based SEGV
+* `./segv2`
+    * reads user input from __argv__
     * find argv[1] SEGVs `./segv`
+    * find symbolic address based SEGV
 
 
 compile

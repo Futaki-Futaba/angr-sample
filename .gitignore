@@ -2,3 +2,5 @@ sample
 segv
 
 .[0-9]*
+.gdb*
+.peda*

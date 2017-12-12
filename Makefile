@@ -1,10 +1,13 @@
-BIN := sample segv
+BIN := sample segv segv2
 
 all: $(BIN)
 	@### Do Nothing 
 
 %: %.c
 	gcc -o $@ $^
+
+clean:
+	rm $(BIN)
 
 test:
 	@echo "### correct input"
